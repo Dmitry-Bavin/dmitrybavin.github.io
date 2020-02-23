@@ -1,0 +1,886 @@
+*{
+	margin: 0;
+	padding: 0;
+		font-family: 'Open Sans', sans-serif;
+
+}
+
+a{
+	text-decoration: none;
+}
+
+li{
+	list-style: none;
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+
+header{
+	width:100%;
+	background:#000;
+	display:flex;
+	
+	position: fixed;
+}
+
+
+.header_logo{	
+	margin-top:35px;
+	margin-left:12%;
+	max-height: 5px;
+}
+
+.header_logo a{
+	text-transform:uppercase;
+	color: #fff;
+	font-weight:800;
+	font-size: 24px;
+	max-height: 5px;
+}
+
+
+/* BEM resicle */
+
+	/* section name and section underline  */
+
+		.pageTitle {
+			width: 100%;
+			padding-top: 101px;
+			text-align: center;
+
+		}
+		.pageTitle h2{
+			display: inline-block;
+			width: 100%;	
+			font-size:44px;
+			font-weight: 600;		
+			}
+		.pageTitle__contentText-italic{
+			font-size: 16px;
+			color: #898989;
+			text-align: center;
+			font-style: italic;
+			font-weight: 500;
+			line-height: 24px;
+			margin-top: 56px;
+
+		}
+		.pageTitle__H2-white{
+			color: #fff;
+		}
+		.pageTitle__H2-black{
+			color: #222221;
+		}
+		.pageTitle__H2-light{
+			font-size: 44px;
+			font-weight: 100;
+		}
+		.pageTitle__line {
+			display: inline-block;
+			width: 99px;
+			padding-bottom: 20px;
+			border-bottom: 4px solid #fcac45;
+		}
+	/* end */
+
+	/* OUR Services cards */
+		.servicesCards {
+			width: 243px;
+			margin: 0 25px 101px;
+		}
+		.servicesCards__Img{
+			width: 125px;
+			height: 125px;
+			border: 7px solid #fcac45;
+			border-radius: 50%;
+			margin: 0 auto 29px auto;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.servicesCards h4{
+			font-size: 25px;
+			text-align: center;
+			margin-bottom: 24px;
+		}
+		.servicesCards p{
+			font-size: 14px;
+			text-align: center;
+			color: #000;
+			line-height: 21px;
+			font-stretch: ultra-expanded;
+			font-weight: 500;
+		}
+	/* end */
+
+/* BEM resicle */
+
+
+
+/* :::::::::::::::::::::::::::::::::: nav in header start :::::::::::::::::::::::::::::::::: */
+nav{
+	display:flex;
+	justify-content: flex-end;
+	margin-top: 31px;
+	/*margin-left: 29%;*/
+	width:100%;
+	margin-right: 8.9%;
+}
+.topnav {
+	display:flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.topnav a {
+	color:#fff;
+	padding: 12px 0 ;
+	margin: 0 12px ;
+	text-align:center;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.topnav a:hover {
+	border-bottom: 3px solid #fcac45;
+}
+
+.topnav a.icon{
+	display: none;	
+	max-height: 5px;
+}
+
+/* 000000000000000000000000000000000000 nav end 000000000000000000000000000000000000 */ 
+
+/* ---------          ---------          ---------          ---------          ---------          */
+
+/* :::::::::::::::::::::::::::::::::: selector main start :::::::::::::::::::::::::::::::::: */ 
+	
+	/* :::::::::::::::::::::::::::::::::: block home start :::::::::::::::::::::::::::::::::: */ 
+
+		main .greeting{
+			margin-top: 209px;
+			text-align:center;
+		}
+
+		main .home {
+			background:#000;
+			color: #fff;
+			display:flex;
+			padding: 10px;
+			box-sizing: border-box;
+			justify-content: center;
+			width: 100%;
+			min-height:703px;
+		}
+
+		main .greeting h1{
+			font-size: 44px;
+			color: #999999;
+			font-family: 'Open Sans', sans-serif;
+			font-weight: lighter;
+			text-align:center;
+		}
+
+		main .mycompany  {
+			font-weight: 900;
+			color: #fcac45;
+		}
+
+		main .slogan {
+			color: #c3c3c3;
+			font-size: 20px;
+			font-weight: 500;
+		}
+
+		main .slogan strong{
+			color: #c3c3c3;
+		}
+
+	/* 000000000000000000000000000000000000   home end   000000000000000000000000000000000000 */ 
+
+	/* ________________________________________________________________________________________ */
+
+	/* :::::::::::::::::::::::::::::::::: block ABOUT start :::::::::::::::::::::::::::::::::: */
+		
+
+		main .about {
+			background: #fff;
+			width: 100%;
+		}
+
+		main .about .wrapAbout {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			width: 1121px;
+			margin: 104px auto 102px;
+			padding: 5px;
+			box-sizing: border-box;
+		}
+
+		.rightSAbout{
+			width: 421px;
+			text-align: left;
+			font-family: 'Open Sans', sans-serif;
+		}
+		.rightSAbout h2 {
+			display: inline-block;
+			padding-bottom: 11px;
+			border-bottom: 4px #fcac45 solid;
+			font-size: 34px;
+			text-transform: uppercase;
+			margin-bottom: 31px;
+			font-weight: 100;
+		}
+		.rightSAbout h2 strong{
+			font-weight: bold;
+		}
+		.rightSAbout p{
+			font-size: 18px;
+			font-weight: 500;
+			color: #898989;
+			word-wrap: break-word;
+			margin-bottom: 37px;
+		}
+		.rightSAbout li{
+			margin: 0 0 20px 0;
+			background: url(img/circle.png) 0px no-repeat;
+			padding-left: 24px			
+		}
+		.rightSAbout li strong{
+			font-size: 18px;
+			color: #707070;
+			font-weight: 700;
+		}
+		.rightSAbout li em{
+			font-size: 16px;
+			color: #898989;
+			font-weight: 600;
+		}
+
+
+
+	/* 000000000000000000000000000000000000        ABOUT end        000000000000000000000000000000000000 */
+	
+
+	/* ::::::::::::::::::::::::::::::::::   Block ourTeam Start   :::::::::::::::::::::::::::::::::: */
+	
+	.ourTeam{
+		background-color: #000;
+	}
+
+		.ourTeam .wrapTeam{
+			width: 75.3%;
+			margin: 0 auto;
+		}
+
+			.wrapTeam .teamBody{
+				width: 100%;
+				display: flex;
+				
+				justify-content: space-around;
+				padding-bottom: 192px;
+				color: #fff;
+				margin-top: 107px;
+			}
+				.teamBody .teamPeople {
+					width: 225px;
+					margin: 30px;
+					flex-wrap: wrap;
+				}
+					.teamPeople .photo {
+						width: 127px;
+						height: 127px;
+						border-radius: 50%;
+						background: #d7d7d7;
+						margin: 0 auto 23px auto;
+					}
+					.teamPeople .name {
+						font-size: 20px;
+						font-weight: bold;
+						text-align: center;
+					}
+					.teamPeople .position {
+						font-size: 14px;
+						text-align: center;
+						color: #d0d0d0;
+						margin-bottom: 35px;
+					}
+					.teamPeople .description {
+						font-size: 12px;
+						color: #d0d0d0;
+						text-align: center;	
+					}
+
+	/* 000000000000000000000000000000000000   ourTeam end   000000000000000000000000000000000000 */ 
+
+	/* ::::::::::::::::::::::::::::::::::   SERVICES start  :::::::::::::::::::::::::::::::::: */
+		
+		main .services {
+			width: 100%;
+			background-color: #fff;
+		}
+
+		main .services .wrapServices{
+			width: 75.3%;
+			margin: 0 auto;
+		}
+		main .services .wrapServices .weCan {
+			margin: 55px auto 0 auto;
+			font-size: 16px;
+			color: #898989;
+			text-align: center;
+			font-style: italic;
+			font-weight: 500;
+			line-height: 24px;
+			padding: 0 75px;
+			box-sizing: border-box;
+		}
+		main .services .wrapServices .servicesBody {
+			width: 100%;
+			display: flex;
+			justify-content: space-around;
+			margin-top: 107px;
+		}
+		
+
+	/* 000000000000000000000000000000000000   SERVICES end  000000000000000000000000000000000000 */
+	
+
+	/* ::::::::::::::::::::::::::::::::::   OUR Clients start  :::::::::::::::::::::::::::::::::: */
+		
+		/*  used styles from "resicle BEM" block  - pageTitle & imgClientsLogos */	
+		main .ourClients {
+			width: 100%;
+			background-color: #000;
+			color: #fff;
+			padding-top: 101px 5px 5px 5px;
+			box-sizing: border-box;
+		}
+
+		main .ourClients .clientsWrap{
+			width: 63.1%;
+			margin: auto;
+		}
+		main .ourClients .clientsWrap .pageTitle{
+			margin-bottom: 121px;
+		}
+		main .ourClients .clientsWrap .imgClientsLogos {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			padding-bottom: 211px;
+		}
+		main .ourClients .clientsWrap .imgClientsLogos img {
+			margin: 15px;
+		}
+
+	/* 000000000000000000000000000000000000   main end 000000000000000000000000000000000000 */
+
+
+	/* ::::::::::::::::::::::::::::::::::   PORTFOLIO start  :::::::::::::::::::::::::::::::::: */
+
+		main .portfolio {
+			width: 100%;
+			background-color: #fff;
+			padding-bottom: 100px;
+		}
+		main .portfolio .portfolioWrap{
+			width: 76.1%;
+			margin: auto;
+		}
+		main .portfolio .portfolioWrap .pageTitle .pageTitle__line{
+			margin-bottom: 56px;
+		}
+		main .portfolio .portfolioWrap .pageTitle .pageTitle__contentText-italic{
+			margin: 0 auto 105px auto;
+			width: 90.1%;
+		}
+		
+		.portfolio__preview {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			padding: 5px;
+			box-sizing: border-box;
+			margin: auto
+			padding-bottom: 100px;
+		}
+		.portfolio__preview-squarImg {
+			margin: 12px 14.5px;
+		}
+		
+
+
+	/* 000000000000000000000000000000000000   PORTFOLIO end 000000000000000000000000000000000000 */ 
+
+	
+
+	/* ::::::::::::::::::::::::::::::::::   TESTIMONIALS start  :::::::::::::::::::::::::::::::::: */
+
+		main .testimonials {
+			width: 100%;
+			background-color: #000;
+		}
+		main .testimonials .testimonialsWrap {
+			width: 61.3%;
+			margin: auto;
+		}
+		main .testimonials .testimonialsWrap .pageTitle .pageTitle__line{
+			margin-bottom: 108px;
+		}
+		main .testimonials .customerReviews {
+			font-size: 18px;
+			color: #e7e7e7;
+			font-weight: 600;
+			text-align: center;
+			margin-bottom: 50px;
+		}
+		main .testimonials .testimonialsWrap .copyright{
+			font-size: 18px;
+			color: #b2b2b2;
+			text-align: center;
+			padding-bottom: 173px;
+		}
+		main .testimonials .testimonialsWrap .copyright span{
+			color: #b2b2b2;
+			font-weight: 500;
+		} 
+	/* 000000000000000000000000000000000000   TESTIMONIALS end 000000000000000000000000000000000000 */ 
+
+
+	/* ::::::::::::::::::::::::::::::::::::   CONTACT start  :::::::::::::::::::::::::::::::::: */
+
+		.contactWrap{
+			width: 50.1%;
+			margin: 0 auto;
+		}
+		.contact__form{
+			margin-top: 96px;
+			padding-bottom: 102px;
+		}
+		.contact__form-input {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			margin-bottom: 31px;
+		}
+		.contact__form-input input {
+			width: 100%;
+			height: 40px;
+		}
+		.contact__form-name {
+			margin-right: 28px;
+			flex-grow: 1;
+			flex-shrink: 1;
+		}	
+		.contact__form-name p{
+			margin-bottom: 5px;
+			color: #636363;
+			font-size: 14px;
+		}
+		.contact__form-email p{
+			margin-bottom: 5px;
+			color: #636363;
+			font-size: 14px;
+		}
+		.contact__form-email{
+			flex-grow: 1;
+			flex-shrink: 1;
+		}
+		.contact__form-massage textarea {
+			width: 100%;
+			height: 163px;
+		}
+		.contact__form-massage p {
+			margin-bottom: 5px;
+			color: #636363;
+			font-size: 14px;
+		}
+		.contact__form-massage .required-red{
+			color: red;
+		}
+		.contact__form-button {
+			display: flex;
+			justify-content: flex-end;
+			margin-top: 31px;
+		}
+		input[type=submit]{
+			width: 165px;
+			height: 40px;
+			background-color: #fcac45;			
+			font-size: 16px;
+			color: #fff;
+			font-weight: 700;
+			border: none;
+		}
+		input, textarea {
+			border: 1px solid #999999;
+		}
+
+
+	/* 000000000000000000000000000000000000   CONTACT end 000000000000000000000000000000000000 */ 
+
+/* 000000000000000000000000000000000000   main end 000000000000000000000000000000000000 */ 
+
+
+/* ---------          ---------          ---------          ---------          ---------          */
+
+
+/* ::::::::::::::::::::::::::::::::::::   footer start  :::::::::::::::::::::::::::::::::: */
+
+	footer {
+		background-color: #222221;
+	}
+	.socialNetwork {
+		width: 100%;
+		padding-top: 31px;
+		padding-bottom: 31px;
+	}
+	.socialNetwork-wrap{
+	
+		width: 14.1%;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-around;
+		
+	}	
+	.socialNetwork-wrap img {
+		width: 31px;
+	}
+
+	.socialNetwork-logo {
+		margin: 7px;
+	}
+
+/* 000000000000000000000000000000000000   footer end 000000000000000000000000000000000000 */ 
+
+
+
+/*@media screen and (max-width: 799px) {
+	.topnav a{
+		display:none;
+	}
+	.topnav a.icon {
+		float:right;
+		margin-top:-17px;
+		display:block;
+		font-size:25px;
+	} 
+
+}*/
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+@media screen and (max-width: 1250px) {
+	
+	main .home {
+		min-height: 450px;	
+	}
+
+	header .header_logo a{
+		font-weight:700;
+		font-size: 20px;
+	}
+	header .header_logo .topnav a{
+		text-align:center;
+		font-size: 11px;
+		font-weight: bold;
+	}
+	
+	main .greeting{
+		margin-top: 150px;
+	}
+
+	main .greeting h1{
+			font-size: 33px;
+	}
+	main .slogan {
+		font-size: 15px;
+	}
+
+	
+	main .about .wrapAbout {
+		width: 100%;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+	}
+	main .wrapAbout .leftSAbout{
+		margin-bottom: 55px;
+	}
+	main .wrapAbout .leftSAbout img{
+		width: 375px;
+	}
+	main .wrapAbout .rightSAbout{
+		width: 309px;
+	}
+
+
+	main .rightSAbout h2 {
+		font-size: 25px;
+		padding-bottom: 8px;
+		margin-bottom: 23px;
+	}
+	main .rightSAbout p{
+		font-size: 14px;
+		text-align: center;
+		margin-bottom: 27px;
+	}
+	main .rightSAbout li{
+		margin: 0 0 10px 0;
+		padding-left: 24px			
+	}
+	main .rightSAbout li strong{
+		font-size: 14px;
+	}
+	main .rightSAbout li em{
+		font-size: 12px;
+	}
+
+	main .teamHeader h2 {
+		font-size: 33px;
+	}
+
+	main .ourTeam .wrapTeam{
+		width: 59.3%;
+		margin: 0 auto;
+	}
+	/*main .teamBody .teamPeople .photo {
+		width: 95px;
+		height: 95px;
+	}
+	main .teamBody .teamPeople .name {
+		font-size: 15px;
+	}
+	main .teamBody .teamPeople .position {
+		font-size: 11px;
+	}
+	main .teamBody .teamPeople .description {
+		font-size: 9px;
+	}*/
+	
+}
+
+@media screen and (max-width: 950px) {
+	header{
+		flex-wrap:wrap;
+		justify-content: center;
+	}
+	main .greeting h1{
+			font-size: 24px;
+	}
+	main .slogan {
+		font-size: 11px;
+	}
+
+	.header_logo a{
+		font-weight:600;
+		font-size: 18px;
+	}
+
+	nav{
+		margin: 53px 0 0 0;
+		min-height: 39px;
+	}
+
+	.header_logo{
+		text-transform:uppercase;
+		color: #fff;
+		font-weight:600;
+		font-size: 18px;
+		cursor:pointer;
+		margin-right: 12%;
+		margin-top: 47px;
+	}
+	
+	.topnav {
+		width: 100%;
+		margin-top: -3px;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		min-height: 47px;
+	}
+
+	.topnav a {
+		padding: 12px 0;
+	}
+	
+	main .home {
+		min-height: 623px;
+	}
+
+	main .greeting{
+	margin-top: 265px;
+	}
+
+	main h1{
+	font-size: 32px;
+	font-weight: 100;
+	color: #999999;
+	text-align:center;
+	}
+	main .mycompany  {
+		font-weight: 900;
+		color: #fcac45;
+	}
+	main .aboutUs {
+		color: #949494;
+		font-size: 15px;
+	}
+	main .aboutUs strong{
+		color: #fff;
+	}
+	.contact__form {
+		width: 85%;
+		margin: 0 auto;
+	}
+	.contact__form-input {
+		flex-direction: column;	
+		margin-bottom: 31px;
+	}
+	.contact__form-name {
+		margin-right: 0;
+		margin-bottom: 25px;
+	}
+	
+	.contact__form-massage {
+		
+		
+	}
+	main .ourTeam .wrapTeam {
+    width: 75.3%;
+    }
+	main .services .wrapServices .servicesBody {
+		flex-wrap: wrap;
+	}
+	.wrapTeam .teamBody{
+		flex-wrap: wrap;
+	}
+	
+}
+@media screen and (max-width: 800px) {
+.portfolio__preview-squarImg img{
+		display: none;
+	}
+	.portfolio__preview-squarImg:nth-child(4n+1) img{
+		display: block;
+	}
+}
+@media screen and (max-width: 570px) {
+	
+	
+	header{
+		width:100%;
+		/*min-height: 235px;*/
+		background:#000;
+		display:flex;
+		justify-content: space-between;
+		flex-wrap: nowrap;
+		position: inherit;
+	}
+	
+	nav{
+		order:0;
+		width: 	10px;
+		margin-top:0;
+	}
+
+	.header_logo{
+		order:2;
+		margin-top:0;
+		margin-right: 5px;
+	}
+	
+	.topnav a{
+		display: none;
+	}
+	
+	.topnav a.icon{
+		display:block;
+		margin:5px 0 0 11px;
+		padding: 0;
+		font-size:15px;
+	}
+
+	
+	
+	.topnav a.icon:hover{
+		text-decoration: none;
+		border-bottom: none;
+	}
+
+	.topnav.responsive{
+		display:flex;
+		flex-direction:column;
+		justify-content: flex-start;
+		width: 10px;
+		margin-top:35px;
+		padding: 0;	
+	}
+
+   .topnav.responsive a{
+		display: block;
+		text-align:left;
+		padding: 0;
+   		margin: 7px;
+   		border-bottom: none;
+	}
+
+	.topnav.responsive a.icon{
+		position: absolute;
+		top:-5px;
+		left: -3.5px;
+	}
+
+	.topnav.responsive a:hover { 
+   		text-decoration: underline #fcac45 2px;
+
+   	}
+
+	main .greeting{
+	margin-top: 130px;
+	}
+	main .home {
+    	min-height: 353px;
+ 	}
+ 	
+}
+
+@media screen and (max-width: 450px) {
+	main .wrapAbout .leftSAbout img{
+		width: 243px;
+	}
+	main .wrapAbout .rightSAbout{
+		width: 200px;
+	}
+	main .wrapAbout .rightSAbout h2{
+		font-size: 20px;
+		text-align: center;
+	}
+	.pageTitle h2{
+			font-size:24px;
+			font-weight: 600;		
+	}
+	.pageTitle__H2-light {
+		font-size:24px;
+	}
+	main .services .wrapServices .weCan {
+		padding: 0;
+	}
+	main .testimonials .testimonialsWrap {
+		width: 85%;
+	}
+	main .ourClients .clientsWrap .imgClientsLogos img{
+		width: 80%;
+		margin-bottom: 18px;
+	}
+	.socialNetwork-wrap{
+		flex-direction: column;
+	}
+}	
