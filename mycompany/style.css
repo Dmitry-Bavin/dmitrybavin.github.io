@@ -765,12 +765,18 @@ nav{
 	
 }
 @media screen and (max-width: 800px) {
-.portfolio__preview-squarImg img{
+
+	main .portfolio .portfolioWrap {
+		width: 71.1%;
+	}
+	.portfolio__preview-squarImg img{
 		display: none;
+		margin: 12px 0;
 	}
 	.portfolio__preview-squarImg:nth-child(4n+1) img{
 		display: block;
 	}
+
 }
 @media screen and (max-width: 570px) {
 	
