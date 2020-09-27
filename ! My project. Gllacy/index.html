@@ -55,12 +55,12 @@
             </form>
           </div>
           <div class="autorization">
-            <a href="#" class="authorization-btn" type="button" aria-label="Кнопка авторизации">
+            <a href="#" class="authorization-btn" aria-label="Кнопка перехода на страницу авторизации">
               Вход
             </a> 
           </div>
           <div class="basket">
-            <a href="#" class="basket-btn" type="button" aria-label="Кнопка корзины товаров">
+            <a href="#" class="basket-btn" aria-label="Кнопка перехода на страницу корзины товаров">
               Пусто
             </a> 
           </div>
@@ -114,13 +114,17 @@
         <div class="wraper">
           <ul class="promo-action__cards promo-action__bg-raspberry">
             <li class="promo-action__card">
-              <h3 class="promo-action__card-title"></h3>
-              <p class="promo-action__card-text"></p>
+              <h3 class="promo-action__card-title">Малинка даром!</h3>
+              <p class="promo-action__card-text">
+                При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
+              </p>
               <a href="" class="promo-action__card-button btn"></a>
             </li>
             <li class="promo-action__card promo-action__bg-chokolade">
-              <h3 class="promo-action__card-title"></h3>
-              <p class="promo-action__card-text"></p>
+              <h3 class="promo-action__card-title">Шоколадки даром!</h3>
+              <p class="promo-action__card-text">
+                При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
+              </p>
               <a href="" class="promo-action__card-button btn"></a>
             </li>
           </ul>
@@ -128,36 +132,86 @@
       </section>
 
       <section class="popular-ice">
-        <h2 class="visually-hidden">Самое популярное мороженое</h2>
+        <h2 class="visually-hidden">Популярное мороженое в нашем магазине</h2>
         <div class="wrapper">
-          <ul class="popular-ice__cards">
-            <li class="popular-ice__card">
-              <h3 class="popular-ice__card-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
-              <img src="" alt="">
-              <p class="popular-ice__card-price">310 ₽<span class="popular-ice__card-weight">/кг</span></p>
-              <a href="#" class="btn hidden popular-ice__btn">Быстрый просмотр</a>
+          <ul class="product-cards">
+            <li class="product-card">
+              <h3 class="product-card__title"><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
+              <img src="img/ice-cream-photos/orange-ice-cream.jpg"  width="267" height="267" alt="Хит! Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой!">
+              <p class="product-card__price">
+                310 ₽
+                <span class="price-text--small">/кг</span>
+              </p>
+              <div class="product-card__hover-show">
+                <a href="#" class="btn product-card__btn">Быстрый просмотр</a>
+              </div>              
             </li>
-            <li class="popular-ice__card">
-              <h3 class="popular-ice__card-title">Сливочно-кофейное с кусочками шоколада</h3>
-              <img src="" alt="">
-              <p class="popular-ice__card-price">380 ₽<span class="popular-ice__card-weight">/кг</span></p>
-              <a href="#" class="btn hidden popular-ice__btn">Быстрый просмотр</a>
+            <li class="product-card">
+              <h3 class="product-card__title"><a href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
+              <img src="img/ice-cream-photos/chokolate-ice-cream.jpg"  width="267" height="267" alt="Хит! Сливочное-кофейное мороженое с кусочками шоколада!">
+              <p class="product-card__price">
+                380 ₽
+                <span class="price-text--small">/кг</span>
+              </p>
+              <div class="product-card__hover-show">
+                <a href="#" class="btn product-card__btn">Быстрый просмотр</a>
+              </div>              
             </li>
-            <li class="popular-ice__card">
-              <h3 class="popular-ice__card-title">Сливочно-клубничное с присыпкой из белого шоколада</h3>
-              <img src="" alt="">
-              <p class="popular-ice__card-price">355 ₽<span class="popular-ice__card-weight">/кг</span></p>
-              <a href="#" class="btn hidden popular-ice__btn">Быстрый просмотр</a>
+            <li class="product-card">
+              <h3 class="product-card__title"><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
+              <img src="img/ice-cream-photos/strawberry-ice-cream.jpg"  width="267" height="267" alt="Хит! Сливочно-клубничное мороженое с присыпкой из белого шоколада!">
+              <p class="product-card__price">
+                355 ₽
+                <span class="price-text--small">/кг</span>
+              </p>
+              <div class="product-card__hover-show">
+                <a href="#" class="btn product-card__btn">Быстрый просмотр</a>
+              </div>              
             </li>
-            <li class="popular-ice__card">
-              <h3 class="popular-ice__card-title">Сливочное крем-брюле с карамельной подливкой</h3>
-              <img src="" alt="">
-              <p class="popular-ice__card-price">415 ₽<span class="popular-ice__card-weight">/кг</span></p>
-              <a href="#" class="btn hidden popular-ice__btn">Быстрый просмотр</a>
+            <li class="product-card">
+              <h3 class="product-card__title"><a href="#">Сливочное крем-брюле с карамельной подливкой</a></h3>
+              <img src="img/ice-cream-photos/creme-brule-ice-cream.jpg"  width="267" height="267" alt="Хит! Сливочное мороженое крем-брюле с карамельной подливкой!">
+              <p class="product-card__price">
+                415 ₽
+                <span class="price-text--small">/кг</span>
+              </p>
+              <div class="product-card__hover-show">
+                <a href="#" class="btn product-card__btn">Быстрый просмотр</a>
+              </div>   
             </li>
           </ul>
         </div>
       </section>
+
+      <section class="advantages">
+        <h2 class="visually-hidden">Чем так хорошо мороженое от "Gllacy"</h2>
+        <p class="advantages__performance">
+          Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес
+        </p>
+        <ul class="advantages__items">
+          <li class="advantages__item">
+            <p class="advantages__item-text">
+              Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
+            </p>
+          </li>
+          <li class="advantages__item">
+            <p class="advantages__item-text">
+              Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
+            </p>
+          </li>
+          <li class="advantages__item">
+            <p class="advantages__item-text">
+              Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
+            </p>
+          </li>
+          <li class="advantages__item">
+            <p class="advantages__item-text">
+              Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
+            </p>
+          </li>
+        </ul>
+      </section>
+
     
   </main>
 
