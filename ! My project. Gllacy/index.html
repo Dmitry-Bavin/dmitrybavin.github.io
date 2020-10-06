@@ -216,21 +216,50 @@
         <h2 class="visually-hidden">Виджеты</h2>
         <div class="widget widget-blog">
           <h3 class="widget-blog__title">Новое в нашем блоге</h3>
-          <a href="" class="widget-blog__linc"></a>
+          <a href="#" class="widget-blog__linc">10 способов сервировки
+            фруктовых щербетов к
+            столу</a>
         </div>
         <div class="widget widget-mailing">
           <div class="widget-mailing__container">
             <h3 class="visually-hidden">Рассылка</h3>
             <p widget-mailing__text>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-            <form action="" class="widget-mailing__form">
+            <form class="widget-mailing__form" action="" method="POST">
               <div class="widget-mailing__form-wrap">
-                <div class="widget-mailing__form-input"></div>
-                <div class="widget-mailing__form-button"></div>
+                <div class="widget-mailing__form-input">
+                  <input type="text" name="subscribe" placeholder="Электронная почта">
+                </div>
+                <div>
+                  <button class="btn widget-mailing__form-button" aria-label="Подписаться на рассылку" >Отправить</button>
+                </div>
               </div>
             </form>
           </div>
         </div>
       </section> 
+
+      <section class="contacts">
+        <h2 class="visually-hidden">Контактная информация и адрес магазина</h2>
+        <div class="contacts__map"></div>
+        <div class="contacts__address">
+          <p>
+            Адрес главного офиса </br>
+            и офлайн магазина </br>
+            <strong>
+              ул. Большая Конюшенная</br>
+              19/8, Санкт-Петербург
+            </strong>
+          </p>
+          <p>
+            Для заказов по телефону: </br>
+            <strong>
+              8 812 450-25-25</br>
+            </strong>
+            (с 10 до 20 ежедневно)
+          </p>
+        </div>
+        <a href="#" class="btn contacts__btn-feedback">Форма обратной связи</a>
+      </section>
 
   </main>
 
