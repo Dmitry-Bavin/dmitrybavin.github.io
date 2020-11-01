@@ -136,16 +136,16 @@
     <section class="filter">
       <h3 class="visually-hidden">Фильтр мороженого</h3>
       <form action="" class="filter-form">
-        <fieldset class="filter-form__item filter-form__sort">
+        <fieldset class="filter-form__item">
           <legend class="filter-form__title">
             Сортировка:
           </legend>
-          <select name="" id="">
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-          </select>
+          <select class="filter-form__sort" name="sort">
+            <option value="Popular">По популярности</option>
+            <option value="cheaper">Сначала недорогие</option>
+            <option value="expensive">Сначала дорогие</option>
+            <option value="fatcontent">По жирности</option>
+           </select>
         </fieldset>
         <fieldset class="filter-form__item filter-form__price-range">
           <legend class="filter-form__title">
@@ -158,12 +158,13 @@
         </fieldset>
         <fieldset class="filter-form__item filter-form__fat-percent">
           <legend class="filter-form__title">
-
+            Жирность:
           </legend>
+          
         </fieldset>
         <fieldset class="filter-form__item filter-form__fillers">
           <legend class="filter-form__title">
-
+            Наполнители:
           </legend>
         </fieldset>
         <button class="filter-form__btn"></button>
