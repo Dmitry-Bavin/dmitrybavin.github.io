@@ -134,7 +134,7 @@
     </div>
 
     <section class="filter">
-      <h3 class="visually-hidden">Фильтр мороженого</h3>
+      <h3 class="visually-hidden">Фильтр каталога</h3>
       <form action="" class="filter-form">
         <fieldset class="filter-form__item">
           <legend class="filter-form__title">
@@ -160,14 +160,58 @@
           <legend class="filter-form__title">
             Жирность:
           </legend>
-          
+          <ul class="filter-form__fatcontent">
+            <li class="filter-form__fatcontent-precent">
+              <input id="0" name="fatcontent" type="radio" value="0">
+              <label for="0">0%</label>
+            </li>
+            <li class="filter-form__fatcontent-precent">
+              <input id="b10" name="fatcontent" type="radio" value="before10" checked>
+              <label for="b10">До 10%</label>
+            </li>
+            <li class="filter-form__fatcontent-precent">
+              <input id="b30" name="fatcontent" type="radio" value="before30">
+              <label for="b30">До 30%</label>
+            </li>
+            <li class="filter-form__fatcontent-precent">
+              <input id="a30" name="fatcontent" type="radio" value="affter30">
+              <label for="a30">От 30%</label>
+            </li>
+          </ul>
         </fieldset>
-        <fieldset class="filter-form__item filter-form__fillers">
+        <fieldset class="filter-form__item">
           <legend class="filter-form__title">
             Наполнители:
           </legend>
+          <ul class="filter-form__toping">
+            <li class="filter-form__toping-item">
+              <input id="chokolade" name="chokolade" type="checkbox" value="p1">
+              <label for="chokolade">             
+            </label>
+            </li>
+            <li class="filter-form__toping-item">
+              <input id="powder" name="sugar" type="checkbox" value="p2">
+              <label for="powder">             
+            </label>
+            </li>
+            <li class="filter-form__toping-item">
+              <input id="fruits" name="fruits" type="checkbox" value="p3">
+              <label for="fruits">             
+            </label>
+            </li>
+            <li class="filter-form__toping-item">
+              <input id="syrups" name="syrups" type="checkbox" value="p4">
+              <label for="syrups">             
+            </label>
+            </li>
+            <li class="filter-form__toping-item">
+              <input id="jams" name="jams" type="checkbox" value="p5">
+              <label for="jams">             
+            </label>
+            </li>
+          </ul>
         </fieldset>
-        <button class="filter-form__btn"></button>
+        <button class="filter-form__btn" type="submit">Применить</button>
       </form>
     </section>
 
