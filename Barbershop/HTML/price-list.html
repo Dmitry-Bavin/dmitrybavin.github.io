@@ -1,96 +1,151 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../CSS/price-list.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barvershop "Borodinsky"</title>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="CSS/normalize.css">
+  <link rel="stylesheet" href="CSS/style.css">
 </head>
-<body>
-    <header class="main__header">
-        <nav class="main__nav">
-            <a href="index.html" class="header__logo-pages">
-                <img src="img/logo-pages.svg" width="111" height="24" alt="Логотип барбершопа 'Борадинский'">
-            </a>
-            <ul class="site__nav">
-                <li class="site__nav-item"><a href="HTML/news.html">НОВОСТИ</a></li>
-                <li class="site__nav-item"><a href="HTML/info.html">ИНФОРМАЦИЯ</a></li>
-                <li class="site__nav-item site__nav-current"><a href="HTML/price-list.html">ПРАЙС-ЛИСТ</a></li>
-                <li class="site__nav-item"><a href="HTML/cotalog.html">МАГАЗИН</a></li>
-                <li class="site__nav-item"><a href="HTML/contacts.html">КОНТАКТЫ</a></li>
-            </ul>
-            <ul class="login__form">
-                <li class="login__btn">ВХОД</li>
-            </ul>
-        </nav>
-    </header>
+<body class="inner-page">
+  <header class="main-header">
+    <nav class="main-nav">
+      <a href="" class="main-header__logo">
+        <img src="img/index-logo.svg" width="368" height="153" alt="Логотип барбершопа 'Борадинский'">
+      </a>
+      <ul class="site-nav">
+        <li class="site-nav__item"><a href="HTML/news.html">Новости</a></li>
+        <li class="site-nav__item"><a href="HTML/info.html">Информация</a></li>
+      <li class="site-nav__item"><a href="HTML/price-list.html">Прайс-лист</a></li>
+      <li class="site-nav__item"><a href="HTML/catalog.html">Магазин</a></li>
+      <li class="site-nav__item"><a href="HTML/contacts.html">Контакты</a></li>
+    </ul>
+    <div class="authorization">
+      <a href="HTML/login.html" class="authorization__btn">Вход</a>
+      </div>
+    </nav>
+  </header>
+  <main class="container price-page">
 
-    <main>
-        <h1 class="page-title">набор для путешествий «Baxter of California»</h1>
-        <ul class="breadcrambs">
-            <li><a href="index.html"></a>Главная</li>
-            <li><a href="#"></a>Магазин</li>
-            <li><a href="#">Средства для ухода</a></li> 
-            <li><a class="breadcrambs__current">Средства для ухода</a></li>
-        </ul>
-
-        <section class="product__photos">
-            <h2 class="visually-hidden">Фото товара</h2>
-            <p class="product__photos-full"><img src="" width="460" height="498" alt="Фото всего набора"></p>
-            <ul class="product__photos-preview">
-                <li class="product__photos-item"><img src="" width="140" height="149" alt="Фото в анфас"></li>
-                <li class="product__photos-item"><img src="" width="140" height="149" alt="Фото в профиль"></li>
-                <li class="product__photos-item"><img src="" width="140" height="149" alt="Фото отдельной части"></li>
-            </ul>
-        </section>
-
-        <section class="product__description">
-            <h2 class="visually-hidden">Описание товара</h2>
-            <p class="product__status">Есть в наличии</p>
-            <p class="product__articul">Артикул: dexter-ae</p>
-            <p class="product__text">Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, 
-                что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. 
-                Набор также может стать отличным подарком.</p>
-            <p class="product__price"><b>2 900 ₽</b><a href="" class="button">Купить</a></p>
-            <h3>В набор входят:</h3>
-            <ul class="product__equip">
-                <li>Средство для умывания (50 мл)</li>
-                <li>Увлажняющий крем (50 мл)</li>
-                <li>Крем для бритья (50 мл)</li>
-                <li>Крем после бритья, шампунь (50 мл)</li>
-                <li>Удобная кожаная косметичка</li>
-            </ul>
-        </section>
-
-
-    </main>
-
-
-    <footer class="main__footer">
-        <p class="footer__contacts">БАРБЕРШОП «БОРОДИНСКИЙ» <br>
-        АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8 <br>
-        КАК НАС НАЙТИ? <br>
-        ТЕЛЕФОН: +7 (495) 666-02-66</p>
-        <div class="footer__social-icon">
-            <b>Давайте дружить!</b>
-            <ul>
-                <li class="social-btn"></li>
-                <li class="social-btn"></li>
-                <li class="social-btn"></li>
-            </ul>
+    <div class="price-page__content-wrap">
+      <h1>Прайс-лист</h1>
+      <ul class="breadcrumbs">
+        <li><a href="index.html">Главная</a></li>
+        <li class="breadcrumbs__current">Прайс-лист</li>
+      </ul>
+      <p class="price-page__headline">
+        Истинно мужская классика
+      </p>
+      <section class="price-page__services">
+        <h2 class="visually-hidden">Что мы предлагаем:</h2>
+        <div class="price-page__col">
+          <h3 class="price-page__col-title">Мы используем только лучшие средства:</h3>
+          <ul class="care-products">
+            <li>Baxter of California</li>
+            <li>Mr Natty</li>
+            <li>Suavecito</li>
+            <li>Malin+Goetz</li>
+          </ul>
         </div>
-        <p class="footer__copyright">РАЗРАБОТАНО:</p>
-        <a href="https://htmlacademy.ru" class="button">HTML Acacdemy</a>
-    </footer>
-    <section class="modal modal__login-form">
-        <h2></h2>
-        <p></p>
-        <form>
-           <a href="" class="button authorization-btn"></a> 
-        </form>
-        <span class="modal-close">x</span>
-    </section>
+        <div class="price-page__col">
+          <table class="price-list__table">
+            <caption class="price-list__table-title price-page__col-title">Цены на услуги наших мастеров:</caption>
+            <tbody>
+              <tr class="price-list__table-row">
+                <td class="price-list__table-col">Стрижка</td>
+                <td class="price-list__table-col">1500 &#8381;</td>
+              </tr>
+              <tr class="price-list__table-row">
+                <td class="price-list__table-col">Стрижка бороды</td>
+                <td class="price-list__table-col">500 &#8381;</td>
+              </tr>
+              <tr class="price-list__table-row">
+                <td class="price-list__table-col">Накрутка усов</td>
+                <td class="price-list__table-col">350 &#8381;</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>    
+      <section class="price-page__about-us">
+        <h2>Несколько слов о нас:</h2>
+        <div class="price-page__col">
+          <p class="price-page__col-text">
+            Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.
+          </p>
+        </div>
+        <div class="price-page__col">
+          <p class="price-page__col-text">
+            Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!
+          </p>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="main-footer">
+    <p class="footer__contacts">
+      Барбершоп «БОРОДИНСКИЙ» <br>
+      Адрес: г. Санкт-петербург, ул. Б. Конюшенная, д. 19/8 <br>
+      <a href="#">Как нас найти?</a> <br>
+      Телефон: +7 (495) 666-02-66
+    </p>
+    <div class="footer__social">
+      <b>Давайте дружить!</b>
+      <ul class="footer__social-list">
+        <li class="footer__social-item">
+          <a href="#">Вконтакте</a>
+        </li>
+        <li class="footer__social-item">
+          <a href="#">Фейсбук</a>
+        </li>
+        <li class="footer__social-item">
+          <a href="#">Инстаграм</a>
+        </li>
+      </ul>
+    </div>
+    <p class="footer__copyright">
+      <b>Разработнано:</b> 
+      <a href="https://htmlacademy.ru" class="button">HTML Acacdemy</a>
+    </p>
+  </footer>
 
+  <section class="modal modal__authorization">
+    <h2 class="modal-authorization__title">Личный кабинет</h2>
+    <p class="modal-authorization__text">Введите логин и пароль</p>
+    <form class="login-form" action="mailto:sifirot23@mail.ru" method="POST">
+      <div class="login-form__item">
+        <label for="user-login" class="visually-hidden"></label>
+        <input id="user-login" type="text" class="input-icon-login" name="login" value="" placeholder="Логин">
+      </div>
+      <div class="login-form__item">
+        <label for="user-password" class="visually-hidden"></label>
+        <input id="user-password" type="password" class="input-icon-password" name="password" value="" placeholder="Пароль">
+      </div>
+      <div class="login-form__checkbox">
+        <label>
+          <input type="checkbox" class="visually-hidden checkbox-icon-cross" name="checkbox-remember">
+          <span class="checkbox-indicator"></span>
+          Запомните меня
+        </label>    
+        <a class="restore" href="#">Я забыл пароль!</a>
+      </div>
+       <button class="button login-form__btn" type="submit">Войти</button> 
+    </form>
+    <span class="modal-close">Закрыть</span>
+  </section>
 
+  <section class="modal modal-map">
+    <h2 class="visually-hidden">Как до нас добраться</h2>
+    <div class="modal-map_img">
+      <img src="img/map.png" width="780" height="560" alt="Найти нас можно по адресу г. Санкт-петербург, ул. Б. Конюшенная, д. 19/8">
+    </div>
+    <button type="button" class="modal-close">Закрыть</button>
+  </section>
+
+  <script src="JS/main.js"></script>
+  <script src="JS/script.js"></script>
 </body>
 </html>
+  
