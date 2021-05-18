@@ -23,6 +23,7 @@
       <div class="main-header__logo logo">
         <img class="logo__image" src="img/header-logo.svg" width="154" height="64" alt="Логотип магазина 'Gllacy'">
       </div>
+      <div class="burger"><span class=""></span></div>
       <nav class="main-header__nav main-nav">
         <ul class="main-nav__section site-list">
           <li class="site-list__item hover-dropdown">
@@ -352,7 +353,7 @@
               </br>
               (с 10 до 20 ежедневно)
             </p>
-            <a href="#" class="btn btn--red contacts__btn-feedback">Форма обратной связи</a>
+            <a href="" class="btn btn--red btn--active contacts__btn-feedback">Форма обратной связи</a>
           </div>
         </div>
       </section>
@@ -498,7 +499,7 @@
       </footer>
     </div>
   </div>
-  <section class="modal modal-contact">
+  <section class="modal modal-contact modal-hidden">
     <h2 class="visually-hidden">Форма обратной связи</h2>
     <p class="modal-contact__title">Мы обязательно Вам ответим!</p>
     <form class="modal-contact__form form" action="mailto:sifirot23@mail.ru" method="POST">
@@ -520,12 +521,13 @@
       </fieldset>
     </form>
   </section>
+  <div class="modal-overlay modal-hidden"></div>
+
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
   <script src="js/ya-map.js"></script>
   <script src="../libs/noUiSlider/nouislider.min.js"></script>
   <script src="js/range-slider.js"></script>
   <script src="JS/main.js"></script>
-  <div class="modal-overlay"></div>
   <!-- </div> wrap end -->
 </body>
 
