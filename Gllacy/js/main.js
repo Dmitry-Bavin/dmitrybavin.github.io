@@ -6,8 +6,6 @@ const burgerBtn = document.querySelector('.burger');
 
 if (modalShowButtons) {
   modalShowButtons.forEach(modalShowButton => {
-    console.log(modalShowButton);
-
     modalShowButton.addEventListener("click", function (e) {
       e.preventDefault();
       modalHidden.classList.add('modal-show');
