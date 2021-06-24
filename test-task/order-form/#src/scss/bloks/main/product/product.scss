@@ -1,0 +1,44 @@
+.product {
+  position: relative;
+
+  max-width: 100%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 30px 0;
+
+  background-color: #F4F4F4;
+
+  @media (min-width: $desktop-width) {
+    padding: 75px 80px;
+  }
+}
+
+.product__inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  background-color: #FFFFFF;
+  box-shadow: 0px 24px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 1px;
+}
+
+.product__column {
+  min-width: 320px;
+  flex: 1 1 50%;
+  min-height: 311px;
+
+  @media (min-width:$desktop-width) {
+    min-height: 500px;  
+  }
+}
+
+@import "product__presentation.scss";
+@import "product__form.scss";
+
+
+
+
+
+
+
