@@ -148,7 +148,9 @@ input[type="radio"].visually-hidden {
   min-height: 100vh;
   -ms-grid-columns: 1fr;
       grid-template: minmax(100px, auto) 1fr minmax(70px, auto)/1fr;
-      grid-template-areas: "header" "main" "footer";
+      grid-template-areas: "header"
+ "main"
+ "footer";
 }
 
 .container {
@@ -405,6 +407,7 @@ textarea:focus:-ms-input-placeholder {
   max-width: 100%;
   margin: 0 auto;
   margin-bottom: 20px;
+  margin-top: 70px;
   padding: 75px 0 30px;
   background-color: #F4F4F4;
 }
