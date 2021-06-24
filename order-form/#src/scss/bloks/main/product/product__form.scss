@@ -1,0 +1,131 @@
+@import "ddSlick.scss";
+
+.product-form {
+  
+}
+
+.product-form__slogan {
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 130%;
+  text-align: center;
+  @media (max-width:$mobile-width-only) {
+    br {
+      display: none;
+    }
+  }
+  
+}
+
+.product-form__header,
+.product-form__form {
+  width: 100%;
+  max-width: 320px;
+  min-width: 280px;
+
+  padding: 0 20px;
+  margin: 0 auto;
+  @media (min-width:$minWidth) {
+    min-width: 80%;
+  }
+  @media (min-width:$desktop-width) {
+    min-width: 320px;
+  }
+}
+
+.product-form__header {
+  margin-bottom: 28px;
+  padding: 0;
+
+  @media (min-width:$md4) {
+    padding-top: 20px;
+  }
+
+  @media (min-width:$desktop-width) {
+    max-width: 100%;
+    padding: 29px 10px;
+    margin-bottom: 52px;
+    border-radius: 0 30px 0  0;
+
+    background-color: #F8F8F8;
+  }
+
+}
+
+.product-form__field {
+  margin-bottom: 38px;
+  
+  &:first-child {
+    margin-bottom: 21px;
+  }
+}
+
+.product-form__label {
+  display: inline-block;
+  margin-bottom: 7px;
+
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.label-green {
+  color: #428A60;
+}
+
+.product-form__phone {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-form__input--your-phone {
+  margin-right: 10px;
+}
+
+.order-btn__text {
+  margin-right: 9px;
+}
+
+.order-btn__svg-arrow {
+  vertical-align: middle;
+}
+
+
+
+.secure {
+  position: relative;
+  padding: 11px;
+
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 700;
+  text-align: center;
+
+  background-color: #F8F8F8;
+
+  @media (min-width:$mobile-width-only) {
+      display: none;
+  }
+}
+
+.secure:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 14px;
+  height: 15px;
+  margin-left: 4px;
+  
+  background-image: url("data:image/svg+xml,%3Csvg width='13' height='15' viewBox='0 0 13 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect y='5.71429' width='12.1429' height='9.28572' rx='3' fill='%23428A60'/%3E%3Cpath d='M3.14282 3.92857C3.14282 2.31116 4.45399 1 6.07139 1C7.6888 1 8.99997 2.31117 8.99997 3.92857V6.85714H3.14282V3.92857Z' stroke='%23428A60' stroke-width='2'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.secure__text span:first-child {
+  margin-right: 51px;
+}
