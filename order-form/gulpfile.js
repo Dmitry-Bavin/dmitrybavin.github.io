@@ -1,4 +1,4 @@
-let project_folder = "--" + require("path").basename(__dirname) + "__project";
+let project_folder = require("path").basename(__dirname) + "-project";
 let source_folder = "#src";
 
 let fs = require('fs');
