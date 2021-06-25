@@ -1,0 +1,41 @@
+.instruction {
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  background-color: #006363;
+
+  @media (min-width: $desktop-width) {
+    padding: 20px 80px;
+  }
+}
+
+.page__section--2 {
+  
+}
+.instruction__title {
+  display: inline-block;
+  width: 100%;
+  margin: 20px 0 35px;
+
+  @include adaptiv-font(30, 20, 1);
+  line-height: 46px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+
+  @media (max-width: $mobile-width-only) {
+    line-height: 30px;
+  }
+}
+
+.instruction__text {
+  margin-bottom: 20px;
+
+  @include adaptiv-font(18, 12, 1);
+  line-height: 28px;
+  color: #ffffff;
+  font-weight: 400;
+
+  &:last-child {
+    margin-bottom: 10px;
+  }
+}

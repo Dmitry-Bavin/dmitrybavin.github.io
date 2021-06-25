@@ -1,0 +1,41 @@
+@import "header__logo.scss";
+@import "header__nav.scss";
+
+.header {
+  grid-area: header;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 80px;
+  margin-bottom: 20px;
+
+  background-color: #35D2AB;
+
+  z-index: 10;
+}
+
+.header__inner {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 100%;
+  padding: 0 20px;
+
+  @media (min-width: $desktop-width) {
+    padding: 0 80px;
+  }
+}
+
+// .header {
+
+//   
+
+//   background-color: #912105;
+
+  
+// }
