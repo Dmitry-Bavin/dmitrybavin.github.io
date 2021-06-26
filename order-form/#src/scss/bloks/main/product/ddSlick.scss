@@ -1,0 +1,98 @@
+.form-group {
+  // position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.dd-container .dd-select {
+  width: 96px;
+  min-height: 50px;
+
+  border-radius: 5px;
+  border: 1px solid #E4E4E4;
+
+  background: #F8F8F8;
+}
+
+.dd-select .dd-selected {
+  padding-left: 9px;
+}
+
+.dd-selected-image.dd-image-right {
+  margin-right: 18px;
+  margin-top: 4px;
+}
+
+.dd-selected-description.dd-desc {
+    display: block;
+    margin-top: 5px;
+
+    font-family: $fontFamily;
+    font-size: 14px;
+    line-height: 130%;
+    font-style: normal;
+    font-weight: 600;
+    color: #212121;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+.dd-pointer.dd-pointer-down {
+  border: none;
+  border-top: none;
+
+  display: block;
+  width: 11px;
+  height: 7px;
+  right: 8px;
+  
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='11' height='6' viewBox='0 0 11 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M1.18182 1L5.18182 5L9.18182 1' stroke='%23212121' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e ");
+  background-repeat: no-repeat;
+}
+
+.dd-pointer.dd-pointer-up {
+  margin-top: -5px;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='11' height='8' viewBox='0 0 11 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M9.18178 6.01063L5.19243 2.00001L1.18181 5.98937' stroke='%23212121' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e ");
+}
+
+.dd-options.dd-click-off-close {
+  margin-top: 1px;
+
+  // box-shadow: none;
+  border: none;
+  border-radius: 1px;
+  background-color: #F8F8F8;
+}
+
+.dd-option.dd-option-selected {
+  border-bottom: solid 1px #E4E4E4;
+}
+
+.dd-option-image.dd-image-right {
+  margin-right: 19px;
+}
+
+.dd-option-description.dd-desc {
+  font-family: $fontFamily;
+  font-size: 14px;
+  line-height: 130%;
+  font-style: normal;
+  font-weight: 600;
+  color: #212121;
+  text-transform: uppercase;
+}
+
+// .dd-pointer::after {
+//   content: "";
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   display: block;
+
+//   
+//   background-repeat: no-repeat;  
+//   background-position: left top;  
+//   background-size: contain;  
+
+//   z-index: 10;
+// }

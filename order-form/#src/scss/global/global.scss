@@ -1,0 +1,154 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.page {
+  height: 100%;
+
+  font-family: $fontFamily, "Arial", sans-serif;
+  font-size: $fsz-default;
+  line-height: $lh-default;
+  color: $color-default;
+}
+
+.page__body {
+  min-height: 100%;
+  
+  background-color: $bgс-default;
+}
+
+._lock {
+  overflow: hidden;
+}
+
+
+// Оболочка
+
+.wrapper {
+  display: grid;
+  min-height: 100vh;
+  grid-template: minmax(100px, auto) 1fr minmax(70px, auto) / 1fr;
+  grid-template-areas: 
+    "header"
+    "main"
+    "footer";  
+    
+  &._loaded {
+  }
+}
+
+// Сетка
+.container {
+  max-width: $maxWidthContainer + px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+.input {
+  width: 100%;
+  padding: 16px 0 16px 10px;
+
+  background-color: #F8F8F8;
+  border: 1px solid #E4E4E4;
+  box-sizing: border-box;
+  border-radius: 5px;
+
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
+  color: #212121;
+  opacity: 0.4;
+}
+
+.input::-webkit-input-placeholder,
+.textarea::-webkit-input-placeholder {
+  font-family: Montserrat;
+  font-size: 14px;
+  color: #212121;
+  opacity: 0.9;
+}
+
+.input::-moz-placeholder,
+textarea::-moz-placeholder {
+  font-family: Montserrat;
+  font-size: 14px;
+  color: #212121;
+  opacity: 0.9;
+}
+
+.input:-moz-placeholder,
+textarea:-moz-placeholder {
+  font-family: Montserrat;
+  font-size: 14px;
+  color: #212121;
+  opacity: 0.9;
+}
+
+.input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  font-family: Montserrat;
+  font-size: 14px;
+  color: #212121;
+  opacity: 0.9;
+}
+
+.input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.input:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder {
+  color: transparent;
+}
+
+.input:focus:-moz-placeholder,
+textarea:focus:-moz-placeholder {
+  color: transparent;
+}
+
+.input:focus:-ms-input-placeholder,
+textarea:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+.textarea {
+  resize: none;
+}
+
+.btn {
+  position: relative;
+
+  width: 100%;
+  padding: 14px 20px;
+  border-radius: 5px;
+
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+  
+  background-color: #428A60;
+}
+
