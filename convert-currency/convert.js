@@ -8,81 +8,39 @@ const currencyOptons = document.querySelectorAll('.exchange-rates__currency');
 let currencyValue;
 let rubValue;
 
-input.onkeypress= function(event){
-  event= event || window.event;
-  if (event.charCode && (event.charCode < 48 || event.charCode > 57))
-   return false;
- };
+// input.onkeypress= function(event){  // 
+//   event = event || window.event;
+//   if (event.charCode && (event.charCode < 48 || event.charCode > 57))
+//    return false;
+//  };
 
-let validateForms = function(inputs, rules, successModal, yaGoal) {
-  new window.JustValidate(inputs, {
-    rules: rules,
-    submitHandler: function(form) {
-      let formData = new FormData(form);
+let validateForms = function(input, rules, successModal, yaGoal) { //  создаю функцию, которая принимает параметры - селектора с которым работаем, правила для полей формы, которые мы будем валидировать, попап, который может быть запущен, если всё успешно, некоторые данные для яндекс метрики
+  new window.JustValidate(input, {                                 //  создаём новый экземпляр класса
+    rules: rules,                                                  //  подучаем свойства этого объекта     
+    submitHandler: function(form) {                                //  обработчик отправки формы
+      let formData = new FormData(form);                           //  создаём экхемпляр объекта formData, который будет принимать данные формы
 
-      let xhr = new XMLHttpRequest(); 
+      let xhr = new XMLHttpRequest();                              //  Формируем запрос для отправки формы
 
-      xhr.onreadystatechange = function() {
-        if (xhr.readyState === 4) {
-          if (xhr.status === 200) {
-            console.log('отправлено'); 
+      xhr.onreadystatechange = function() {                        //  Проверяем статус отправки данных с формы
+        if (xhr.readyState === 4) {                                //  Успех  
+          if (xhr.status === 200) {                                //  Контрольный, страница обработана успешно
+            console.log('отправлено');                              
           }
         }
       }
 
-      xhr.open('POST', 'mail.php', true);
-			xhr.send(formData);
-
-      form.reset()
+      xhr.open('POST', 'mail.php', true);                           // открываем запрос, передаём метод и обработчик
+			xhr.send(formData);                                           // передаём данные 
+      
+      form.reset()                                                  // чистим форму
     }
   });
 }
 
 
-validateForms('form', {email: {required: true, email: true}}, '.thanks-popup', 'send goal');
+validateForms('form', {email: {required: true, email: true}}, '.thanks-popup', 'send goal');    //
 
-// function parseXML() {
-//     var doc = new ActiveXObject(‘Microsoft.XMLDOM’);
-//     doc.loadXML(str);
-//     return doc;
-//   }
-
-// fetch('https://www.cbr-xml-daily.ru/daily_json.js')
-// .then(response => response.text())
-// .then(data => {
-//   const parser = new DOMParser();
-//   const pageDOM = parser.parseFromString(data, "text/html");
-//   const tableData = pageDOM.querySelector('.data');
-  
-// //   // Для примера	
-//   const dataElement = document.getElementById('data');
-//   dataElement.innerHTML = tableData;
-
-//   console.log(tableData)
-// });
-  
-
-// console.log(rubValue.oninput);
-
-// document.addEventListener("DOMContentLoaded", function() {
-//   Array.from(currencyOptons).forEach(currencyOpton => {
-//     currencyOpton.onclick = function() {
-//       alert(document.getElementById("currency").value);
-//     };
-//   })
-// });
-
-
-// document.addEventListener("DOMContentLoaded", function() {
-//   calculateBtn.onclick = function() {
-//     selectValue.value;
-//   };
-// });
-
-// for (let i = 0; i < currencyOptons.length; i++) {
-//   var currencyOpton = currencyOptons[i];
-  
-// }
 
 document.addEventListener('DOMContentLoaded', () => { // проверянм, что DOM дерево было загружено
   select.addEventListener('change', function() {      // Слушаем событие change, на select
@@ -97,16 +55,19 @@ document.addEventListener('DOMContentLoaded', () => { // проверянм, ч�
     }
   });
   
-  input.oninput = function() {                       // Слушаю событие ввода данных в инпут                        
+  input.oninput = function() { 
+    validate(this);                      // Слушаю событие ввода данных в инпут                        
     rubValue = this.value;                           // Записываю в переменную значение введённое в input
-    convertСurrency(rubValue, currencyValue);        // Вызываю функцию конвертации и передаю параметры рубля и обменной валюты 
-    // rubValue = rubValue.replace(/[^0-9\.]/gi, '');
-              
+    convertСurrency(rubValue, currencyValue);        // Вызываю функцию конвертации и передаю параметры рубля и обменной валюты            
   };
+
+  function validate(inp) {
+    inp.value = inp.value.replace(/[^\d\.]/g, '');
+}
     
 
   let convertСurrency = function (rubValue = 0, currencyValue = currencyOptons[0].value) { // Функция принимает параметры рубля и обменной валюты, 
-    convertResult.textContent = (rubValue / currencyValue).toFixed(2);                                  // делит количество рублей на значением обменного курса выбранной валюты за одну единицу. 
+    convertResult.textContent = (rubValue / currencyValue).toFixed(2);                     // делит количество рублей на значением обменного курса выбранной валюты за одну единицу. 
   }
 });
 
