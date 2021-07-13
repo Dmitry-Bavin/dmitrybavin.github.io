@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="justValidateTooltip.min.css">
+  <link rel="stylesheet" href="convert.css">
+</head>
+<body>
+  
+  <div class="wrapper">
+    <form class="exchange-rates" action="" method="POST">
+      <fieldset>
+        <h2 class="visually-hidden">Расчёт курса валют</h2>
+        <input type="hidden" name="admin_email[]" value="my.work.mail.bd@yandex.ru">
+        <input type="hidden" name="form_subject" value="Тема письма">
+        <div class="input-wrapper">
+          <label for="rub">Сумма, руб.</label>
+        <input class="exchange-rates__input input input--rub" type="number" name="rub" value="0" placeholder="0" id="rub">
+        </div>
+        <select class="exchange-rates__select" name="currency" id="currency">
+          <option class="exchange-rates__currency" value="74.47">Dollars</option>
+          <option class="exchange-rates__currency" value="88.33">Euro</option>
+          <option class="exchange-rates__currency" value="11.48">CNY</option>
+        </select>
+        <p class="exchange-rates__text">Итого: <span class="exchange-rates__total">0 </span><span class="currency-name"> </span></p>
+      </fieldset>
+      
+      <fieldset>
+        <div class="input-wrapper">
+          <input class="exchange-rates__input input input--email" type="email" data-validate-field="email" name="email" placeholder="Ваш email">
+        </div>
+        <input class="visually-hidden" type="file" name='file[]' multiple>
+        <button class="exchange-rates__btn" type="submit">Отправить</button>
+      </fieldset>
+    </form>
+  </div>
+  
+  <script src="just-validate.min.js"></script>
+  <script src="convert.js"></script>
+</body>
+</html>

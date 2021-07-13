@@ -1,0 +1,253 @@
+.wrapper {
+  width: 700px;
+  margin: 0 auto;
+  margin-top: calc(100vh/2 - 150px);
+  padding-left: 100px;
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.input-wrapper {
+  margin-right: 10px;
+  width: 500px;
+}
+
+.input-wrapper label {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.currency-name {
+  display: inline-block;
+  min-width: 100px;
+  margin-left: 10px;
+}
+
+.exchange-rates__btn {
+  width: 500px;
+  max-width: 100%;
+  margin-top: 30px;
+  padding: 9px 10px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+
+  background-color: #68B738;
+}
+
+.exchange-rates__select {
+  height: 53px;
+  margin-top: auto;
+  margin-left: 10px;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input {
+  outline: none;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+.input {
+  position: relative;
+  width: 100%;
+  padding: 13px 45px 15px 10px;
+  border: 1px solid #e7e7e7;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Oswald";
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #444444;
+}
+
+.input:hover,
+.input:focus {
+  border: 1px solid #CDCDCD;
+}
+
+.input:active {
+  border: 1px solid #444444;
+}
+
+.input--err {
+  border: 1px solid #FF8282;
+}
+
+.textarea {
+  padding: 13px 12px 15px 15px;
+  resize: none;
+}
+
+.input-radio {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #CDCDCD;
+  border-radius: 50%;
+}
+
+.input-radio:hover,
+.input-radio:focus {
+  border: 1px solid #BABABA;
+}
+
+.input-radio:active {
+  opacity: 0.3;
+}
+
+.input-radio::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #68b738;
+}
+
+.input-checkbox {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #CDCDCD;
+}
+
+.input-checkbox:hover,
+.input-checkbox:focus {
+  border: 1px solid #BABABA;
+}
+
+.input-checkbox:active {
+  opacity: 0.3;
+}
+
+
+
+.input::-webkit-input-placeholder,
+.textarea::-webkit-input-placeholder {
+  font-family: "Oswald";
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #444444;
+}
+
+.input::-moz-placeholder,
+textarea::-moz-placeholder {
+  font-family: "Oswald";
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #444444;
+}
+
+.input:-moz-placeholder,
+textarea:-moz-placeholder {
+  font-family: "Oswald";
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #444444;
+}
+
+.input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  font-family: "Oswald";
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #444444;
+}
+
+.input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.input:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder {
+  color: transparent;
+}
+
+.input:focus:-moz-placeholder,
+textarea:focus:-moz-placeholder {
+  color: transparent;
+}
+
+.input:focus:-ms-input-placeholder,
+textarea:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+.btn {
+  position: relative;
+  max-width: 100%;
+  padding: 9px 10px;
+  font-family: "Oswald";
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #68B738;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+  background-color: #5EAA2F;
+}
+
+.btn:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
