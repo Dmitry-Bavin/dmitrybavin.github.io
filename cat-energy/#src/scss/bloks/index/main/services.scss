@@ -1,0 +1,248 @@
+.services {
+  margin-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 71px;
+  }
+}
+.services__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.services__item {
+  margin-bottom: 20px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+
+    margin-right: 80px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  
+}
+.services-card {
+  position: relative;
+  
+  flex: 1 1 100%;
+  padding: 30px 20px 20px;
+
+  background-color: #F2F2F2;
+  color: #000000;
+
+  &::before {
+    content: "";
+    position: absolute;
+  }
+
+  @media (min-width: $tablet-width)  and (max-width: $desktop-width) {
+    padding: 77px 279px 57px 52px;
+
+    &:nth-child(2) {
+      padding-right: 314px;
+    }
+  }
+
+  @media (min-width: $desktop-width){
+    flex: 1 1 45%;
+    padding: 77px 52px 59px;
+  } 
+}
+
+.services-card--slim {
+  &::before {
+    top: 20px;
+    left: 22px;
+
+    width: 50px;
+    height: 60px;
+
+    background-image: url("data:image/svg+xml,%3Csvg width='36' height='50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M28.203 0h-.195c-.33.187-.593.474-.75.82a8.028 8.028 0 00-.664 1.757.84.84 0 01-.761.691 3.77 3.77 0 00-2.69 1.948c-.372.661-.69 1.35-.952 2.062-.73 1.897-1.29 3.856-1.98 5.768-.324.872-.339.872-1.316.872-1.168 0-1.085-.18-1.1 1.108 0 .407.123.613.555.593.133 0 .334-.067.385.108.052.175-.123.252-.226.355a4.626 4.626 0 01-2.227 1.258c-.977.263-1.975.47-2.926.789-2.443.82-4.7 1.964-6.46 3.902a14.44 14.44 0 00-2.437 4.041C2.57 30.526 1.656 35.217.946 39.954a97.064 97.064 0 00-.75 6.7C.102 47.759 0 48.877 0 50h17.141a1.126 1.126 0 00-.118-.66 2.577 2.577 0 00-1.97-1.582c-.36-.083-.401-.191-.18-.475.36-.482.637-1.022.818-1.597.838-2.48 1.162-5.067 1.568-7.63.23-1.956.83-3.85 1.77-5.582a11.126 11.126 0 012.874-3.283c.427-.325.443-.325.515.227.051.366.061.742.087 1.113a48.166 48.166 0 01-.092 7.31 31.866 31.866 0 00-.078 5.67A38.826 38.826 0 0023.503 50h6.84a2.79 2.79 0 00-2.18-2.289 4.62 4.62 0 00-1.934.103c-.309.073-.438 0-.463-.335a29.113 29.113 0 01.514-8.154 91.803 91.803 0 001.574-9.371 9.163 9.163 0 011.172-3.609c.612-1.092 1.147-2.226 1.749-3.324a3.031 3.031 0 00.216-2.676c-.139-.366-.273-.737-.442-1.087-.515-1.005-1.029-2-1.502-3.016-.252-.515-.196-.577.365-.593.838 0 .838 0 .854-.845v-.34c0-.356-.134-.552-.515-.516h-.781c-.355 0-.458-.149-.37-.515a3.217 3.217 0 012.638-2.284 11.291 11.291 0 013.404.222.513.513 0 00.643-.33c.206-.515.432-1.03.664-1.546a.517.517 0 00-.052-.588c-1.646-2.093-3.43-4.046-5.863-5.299a.767.767 0 01-.452-.577 10.123 10.123 0 00-.653-2.144A1.803 1.803 0 0028.203 0z' fill='%23000'/%3E%3C/svg%3E") , url("data:image/svg+xml,%3Csvg width='50' height='50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='25' cy='25' r='25' fill='%2368B738'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: 36px 50px, 50px;
+    background-position: center 0, center 4px;
+
+    
+
+    @media (min-width: $tablet-width) {
+      top: 81px;
+      left: auto;
+      right: 62px;
+
+      width: 200px;
+      height: 211px;
+      background-size: 140px 192px, 200px;
+      background-position: center 0, center 11px;
+    }
+    
+    @media (min-width: $desktop-width) {
+      top: 41px;
+      left: 52px;
+      right: auto;
+
+      width: 100px;
+      height: 110px;
+      background-size: 70px 97px, 100px;
+      background-position: center 0, center 7px;
+    }
+  }
+}
+
+.services-card--pro {
+  &::before {
+    top: 24px;
+    left: 13px;
+
+    width: 67px;
+    height: 50px;
+
+    background-image: url("data:image/svg+xml,%3Csvg width='67' height='28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M61.55 2.9A7.599 7.599 0 0163.8.6c.5-.35.8-.35 1.1.3.4.95.75 1.95.45 3a1.145 1.145 0 00.2 1.05c.3.4.55.8.8 1.15a3.136 3.136 0 01.45 3.1 2.715 2.715 0 00-.1 1.55c.1.495.1 1.005 0 1.5a1.875 1.875 0 01-1.35 1.6c-.64.122-1.21.478-1.6 1a.525.525 0 01-.45.25c-.6.1-2.1-1.25-2.1-1.85v-.3c.05-1.8-.05-1.95-1.7-2.7a2.194 2.194 0 01-.9-.6c-.3-.4-.7-.35-1.15-.2-.45.15-.7.45-.65.95.15 1.21.2 2.431.15 3.65a.94.94 0 00.1.4c1.55 2.25 2.15 4.9 2.9 7.45.6 1.95 1.7 3 3.7 3.15.32.026.638.076.95.15a2.08 2.08 0 011.7 1.6c.35 1.05.15 1.3-.9 1.3h-3.25a1.62 1.62 0 01-1.15-.4 5.855 5.855 0 00-1.7-1 3.63 3.63 0 01-1.7-1.3 14.304 14.304 0 00-2-2.25c-1.4-1.45-2.9-2.85-4.2-4.35a5.69 5.69 0 01-1.6-3.8c0-.45-.1-.65-.6-.45a.965.965 0 01-.5.15c-1.4 0-2.1.85-2.6 2.1-.45 1.05-1.05 2.05-1.6 3.1A5.194 5.194 0 0044 22c0 1.2.3 1.6 1.4 2 .7.25 1.35.5 1.7 1.2.4.8.3 1-.55 1.05h-3.4a.94.94 0 01-.95-.55l-.9-1.5a3.024 3.024 0 01-.35-2.7 5.93 5.93 0 00.05-2.65 4.209 4.209 0 01.85-3.5c.3-.35.3-.5-.2-.6a25.028 25.028 0 01-5.9-2.05.05.05 0 01-.05-.05c-1.6-.6-1.9-.5-2.35 1.15-.4 1.4-.8 2.8-1.1 4.25-.35 1.6.05 3.1.55 4.6.2.6.8.55 1.25.7 1 .3 1.85.7 2.25 1.75.35.8.3.9-.55.9-.85 0-1.7-.05-2.6 0a3.32 3.32 0 01-2.1-.7c-2.4-1.6-3.1-4.05-3.3-6.7-.1-1.65-1-2.95-2.05-4.2-.2-.25-.4-.35-.7-.15a22.16 22.16 0 01-3.35 1.5 13.355 13.355 0 00-6.1 4.4 5.315 5.315 0 00-1.1 2.55c-.15.9.1 1.3 1 1.55s1.35.75 1.45 1.7c.05.4-.1.6-.5.6h-4.05a.826.826 0 01-.65-.4 4.28 4.28 0 01-.95-2.75 25.292 25.292 0 01.45-5.15 3.149 3.149 0 011.7-2.4c2.95-1.4 4.5-4.05 5.9-6.8.3-.55.05-.65-.45-.6a8.234 8.234 0 00-3.85 1.6 35.307 35.307 0 00-4.15 3.55 8.335 8.335 0 01-5.15 2.45c-3.65.2-5.35-1.85-5.2-5.15a4.845 4.845 0 011.2-3.05 2.125 2.125 0 012.25-.75c.75.2.95.6.65 1.35-.15.3-.35.55-.5.85a3.75 3.75 0 00-.5 1c-.55 1.5.2 2.55 1.75 2.7 1.65.15 3-.55 4.25-1.55a22.474 22.474 0 004-4.15 10.394 10.394 0 017.2-4.05c1.15-.15 2.15-.65 3.25-.95 2.057-.627 4.2-.93 6.35-.9a6.5 6.5 0 002.9-.55c2.45-1 5-1 7.55-.5 2 .4 4 .9 5.95 1.4a8.29 8.29 0 003.5-.1 33.895 33.895 0 016.7-1 9.08 9.08 0 014.3.85c1 .45 1 .45.75 1.4z' fill='%23000'/%3E%3C/svg%3E"), url("data:image/svg+xml,%3Csvg width='50' height='50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='25' cy='25' r='25' fill='%2368B738'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: 67px 28px, 50px;
+    background-position: center, center;
+
+    
+
+    @media (min-width: $tablet-width) {
+      top: 91px;
+      left: auto;
+      right: 28px;
+
+      width: 268px;
+      height: 200px;
+      background-size: 268px 112px, 200px;
+      background-position: center, center;
+    }
+    
+    @media (min-width: $desktop-width) {
+      top: 47px;
+      left: 33px;
+      right: auto;
+
+      width: 134px;
+      height: 100px;
+      background-size: 134px 56px, 100px;
+      background-position: center, center;
+    }
+  }
+}
+
+.services-card__title {
+  margin-left: 71px;
+  margin-bottom: 29px;
+
+  @include title-midle(24, 37, 400);
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+    margin-bottom: 24px;
+    @include title-midle(36, 36, 400);
+  }
+  
+  @media (min-width: $desktop-width) {
+    margin-left: 162px;
+    margin-bottom: 73px;
+  }
+}
+.services-card__text {
+  padding-bottom: 23px;
+  margin-bottom: 19px;
+  border-bottom: 1px solid #D9D9D9;
+  color: #444444;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 5px;
+    margin-bottom: 43px;
+    border-bottom: none;
+    color: #000000;
+
+    @include text-params(16, 24, 400);
+  }
+  
+  @media (min-width: $desktop-width) {
+    margin-bottom: 18px;
+  }
+}
+.services-card__link {
+  position: relative;
+  display: inline-block;
+  padding-right: 49px;
+  
+  font-family: $fontFamily;
+  font-size: 16px;
+  line-height: 16px;
+  color: #111;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  transition: opacity .3s ease;
+    
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+
+    will-change: transform;
+    transition: transform .2s ease;
+    transform: perspective(1px) translate3d(-9px,-50%,0);
+  }
+
+  &::before {
+    transform-origin: right;
+    right: 6px;
+    width: 18px;
+    height: 2px;
+
+    background-color: #000000;
+  }
+
+  &::after {
+    right: 0;
+
+    border: 5px solid transparent;
+    border-right: none;
+    border-left: 7px solid #000000;
+    background-color: transparent;
+  }
+
+  &:hover {
+
+    &::before {
+      transform: perspective(1px) translate3d(0,-50%,0) scaleX(1.5);
+    }
+
+    &::after {
+      transform: perspective(1px) translate3d(0,-50%,0);
+    }
+  }
+  
+  @media (min-width: $tablet-width) {
+    padding-right: 58px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  
+  @media (min-width: $desktop-width) {
+    padding-right: 61px;
+  }
+}

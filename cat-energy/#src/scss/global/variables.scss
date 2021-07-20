@@ -1,0 +1,45 @@
+// Colors
+$firmcolor: #68b738;
+$firmcolor-hover: #5eaa2f;
+$basic-grey: #f2f2f2;
+$spetial-grey: #CDCDCD;
+$bg-grey-hover: #ebebeb;
+$darkgrey-1: #444444;
+$darkgrey-2: #222222;
+$err: #FF8282;
+
+
+
+// Viwports
+
+$tablet-width: 768px;
+$desktop-width: 1300px;
+$mobile-width-only: 767px;
+$max-width-wrapper: 1440px;
+$minWidth: 320px;
+$maxWidth: 768px;
+$maxWidthContainer: 768;
+$siteWrapper: $maxWidth;
+$md1: $maxWidthContainer+12;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98px;
+
+// Fonts
+$fontFamily: "Oswald";
+// Размер шрифта по умолчанию
+$fsz-default: 14px;
+// Межстрочный интервал по умолчанию
+$lh-default: 18px;
+// Цвет шрифта по умолчанию
+$color-default: #444444;
+
+
+// Цвет фона по умочанию
+$bgс-default: #ffffff;
+
+
+// Плотность пикселей
+
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;

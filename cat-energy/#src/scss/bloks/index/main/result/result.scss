@@ -1,0 +1,38 @@
+.result {
+  background-color: #EAEAEA;
+  width: 100%;
+  margin: 0 auto;
+
+
+  @media (min-width: $tablet-width) {
+    border-top: 1px solid #E6E6E6;
+    background-color: transparent;
+    background-image: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-top: none;
+    background-color: transparent;
+    background-image: linear-gradient(to bottom, #fff 190px, #f2f2f2 190px);
+  }
+}
+
+.result__inner {
+  position: relative;
+  margin: 0 auto;
+
+  @media (max-width: $mobile-width-only) {
+    padding: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+@import "result__left.scss";
+@import "result__slider.scss";

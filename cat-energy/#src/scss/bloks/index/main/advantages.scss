@@ -1,0 +1,122 @@
+.advantages {
+  padding-bottom: 42px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+  }
+}
+.advantages__title {
+  margin-bottom: 38px;
+  @include title-big(36, 40, 400);
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+    @include title-big(60, 60, 400);
+    color: #000000;
+  }
+}
+.advantages__list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    counter-reset: list-adv;
+  }
+  @media (min-width: $desktop-width) {
+    justify-content: start;
+  }
+}
+.advantages__item {
+  position: relative;
+  min-height: 60px;
+  padding-left: 80px;
+  margin-bottom: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  
+    width: 60px;
+    height: 60px;
+    background-color: #68B738; 
+  }
+  &--leaf::before {
+    background-image: url(../img/icons/advantages/icon_leaf.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &--water::before {
+    background-image: url(../img/icons/advantages/icon_water.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &--eat::before{
+    background-image: url(../img/icons/advantages/icon_eat.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &--time::before {
+    background-image: url(../img/icons/advantages/icon_time.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media (min-width: $tablet-width) {
+   width: 35%; 
+   min-height: auto;
+   margin-bottom: 41px;
+   padding-left: 0; 
+   padding: 151px 0 57px;
+
+   &:nth-last-child(1),
+   &:nth-last-child(2) {
+    margin-bottom: 0;
+   }
+
+   &::before {
+     top: 40px;
+   
+     width: 80px;
+     height: 80px;    
+   }
+
+   &::after {
+      counter-increment: list-adv;
+      content: counter(list-adv);
+      position: absolute;
+      top: 0;
+      right: 0;
+    
+      font-family: $fontFamily;
+      font-size: 280px;
+      line-height: 280px;
+      font-weight: 400;
+      text-align: center;
+      color: #F2F2F2;
+      
+      z-index: -1;
+    }
+  }
+  
+  @media (min-width: $desktop-width) {
+    width: calc(25% - 60px);
+    margin-right: 80px;
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+    &:nth-last-child(1),
+    &:nth-last-child(2),
+    &:nth-last-child(3),
+    &:nth-last-child(4) {
+    margin-bottom: 0;
+   }
+  }
+}

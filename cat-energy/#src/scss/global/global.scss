@@ -1,0 +1,82 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.page {
+  height: 100%;
+
+  font-family: "Arial", sans-serif;
+}
+
+.page__body {
+  position: relative;
+  min-height: 100%;
+  
+  @include text-params(14, 18, 400);
+  
+  line-height: $lh-default;
+  color: $color-default;
+  background-color: $bgс-default;
+
+  @media (min-width: $tablet-width) {
+    @include text-params(16, 24, 400);
+  } 
+}
+
+._lock {
+  overflow: hidden;
+}
+
+
+// Оболочка
+
+// .wrapper {
+ 
+// }
+
+// .page__wrapper {
+//   max-width: 1440px;
+//   margin: 0 auto;
+// }
+
+.content-wrapper {
+    
+}
+
+// Сетка
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+  }
+}
+
+@import "inputs.scss";
+@import "buttons.scss";
+

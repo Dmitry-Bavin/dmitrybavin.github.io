@@ -1,0 +1,35 @@
+.header__logo {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+
+  @media (min-width: $tablet-width) {
+    flex-grow: 0;
+  }
+}
+
+.page__inner .logo__link {
+  
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+  
+  &:active {
+    opacity: 0.6;
+  } 
+}
+
+.logo__link--2 {
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.logo__image-2 {
+  margin-top: 3px;
+  
+}

@@ -1,0 +1,141 @@
+.footer {
+  background-color: #F2F2F2;
+}
+
+.footer__inner {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+
+  padding-top: 38px;
+  padding-bottom:  20px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding-top: 54px;
+    padding-bottom:  57px;
+  }
+  
+  @media (min-width: $desktop-width) {
+    padding-top: 57px;
+    padding-bottom:  52px;
+  }
+}
+.footer__item {
+  @media (min-width: $tablet-width) {
+   flex: 1 1 33.3333%; 
+  }
+}
+.footer__logo {
+  margin-bottom: 29px;
+  &:hover,
+  &:focus {
+    opacity: 60%;
+    transition: opacity .2s ease;
+  }
+  
+  &:active {
+    opacity: 30%;
+    transition: opacity .2s ease;
+  }
+  
+  @media (min-width: $tablet-width) {
+   margin-bottom: 0; 
+  }
+}
+.footer__social {
+  width: 100%;
+  margin-bottom: 20px; 
+
+  @media (min-width: $tablet-width) {
+   margin-bottom: 0;
+  }
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 19px 0 20px;
+
+  border-top: 1px solid #D9D9D9;
+  border-bottom: 1px solid #D9D9D9;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    border: none; 
+  }
+}
+.social__item {
+
+
+  &:nth-child(2) {
+    margin-left: 36px;
+    margin-right: 33px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &:nth-child(2) {
+      margin-left: 27px;
+      margin-right: 21px;
+    }
+  }
+}
+
+.social__svg {
+  @media (min-width: $tablet-width) {
+    transform: scale(1.5);
+  }
+}
+
+.social__link:hover .social__svg:not(.social__svg--fb) path,
+.social__link:focus .social__svg:not(.social__svg--fb) path{
+  fill: $firmcolor;
+  transition: fill .3s ease;
+}
+
+.social__link:active .social__svg path {
+  opacity: 30%;
+  transition: opacity .2s ease;
+}
+
+.social__link:hover .social__svg--fb path,
+.social__link:focus .social__svg--fb path{
+  stroke: $firmcolor;
+  transition: fill .3s ease;
+}
+
+.footer__copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+   justify-content: flex-end; 
+  }
+}
+.copyright {
+  &:active {
+    opacity: 30%;
+    transition: opacity .2s ease;
+  }
+}
+.copyright__title {
+  @include text-params(16, 19, 400);
+  color: #444444;
+
+  @media (min-width: $tablet-width) {
+   margin-right: 22px; 
+  }
+}
+.copyright:hover .copyright__logo path,
+.copyright:focus .copyright__logo path {
+  fill: $firmcolor;
+  transition: fill .3s ease;
+}

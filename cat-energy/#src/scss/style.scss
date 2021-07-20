@@ -1,0 +1,12 @@
+@import "mixins/mixins.scss";
+@import "font/fonts.scss";
+@import "global/null.scss";
+@import "global/variables.scss";
+@import "global/global.scss";
+
+
+@import "bloks/header/header.scss";
+@import "bloks/index/main/main.scss";
+@import "bloks/catalog/page-main/page-main.scss";
+@import "bloks/choice-forms/page-main/page-main.scss";
+@import "bloks/footer/footer.scss";

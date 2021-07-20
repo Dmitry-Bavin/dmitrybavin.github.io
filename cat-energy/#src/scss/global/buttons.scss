@@ -1,0 +1,45 @@
+.btn {
+  position: relative;
+
+  max-width: 100%;
+  padding: 9px 10px;
+
+  font-family: $fontFamily;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  
+  background-color: #68B738;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: #5EAA2F;
+  }
+
+  &:active {
+    color: rgba(255,255,255, 0.3);
+  }
+
+  &--grey {
+
+    font-size: 16px;
+    line-height: 20px;
+    color: #444444;
+    background-color: #F2F2F2;
+
+    cursor: pointer;
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: #EBEBEB;
+    }
+
+    &:active {
+      color: rgba(68, 68, 68, 0.3);
+    }    
+  }
+}
