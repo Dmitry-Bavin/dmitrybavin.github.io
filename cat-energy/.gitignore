@@ -4,5 +4,6 @@
 *.pdf
 *.psd
 node_modules/
+package-lock.json
 npm-debug.*
 Thumbs.db
