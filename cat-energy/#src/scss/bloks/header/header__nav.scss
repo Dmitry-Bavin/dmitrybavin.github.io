@@ -1,4 +1,3 @@
-
 @import "header__burger-icon.scss";
 
 ._active {
@@ -12,7 +11,7 @@
   transition: all 0.3s ease 0s;
   visibility: hidden;
 
-  &._active{
+  &._active {
     height: 198px;
     visibility: visible;
     opacity: 1;
@@ -56,6 +55,7 @@
   &:first-child {
     border-top: 1px solid #E6E6E6;
   }
+
   @media (min-width: $tablet-width) {
     width: auto;
     padding: 0;
@@ -111,7 +111,7 @@
     border-bottom: 2px solid $firmcolor;
     cursor: default;
   }
-  
+
   @media (min-width: $desktop-width) {
     border-bottom: 2px solid #ffffff;
   }
@@ -121,12 +121,6 @@
   border-bottom: 2px solid $firmcolor;
 }
 
-.nav {
-  
-
-  
-}
-
-.nav._active {
-  // left: 0;
+._active .nav__link--actiive {
+  border-bottom: none;
 }

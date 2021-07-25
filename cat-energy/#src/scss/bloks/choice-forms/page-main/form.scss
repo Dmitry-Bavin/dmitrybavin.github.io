@@ -1,13 +1,66 @@
+.form {
+  margin-bottom: 32px;
+}
+
+.form .page-title {
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+  }
+}
+
 .form__fields {
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 70px;
+    padding: 0;
+    padding-left: 71px;
+    padding-right: 67px;
   }
-  
+
   @media (min-width: $desktop-width) {
     padding: 0 110px;
+  }
+}
+
+@import "form__cat-params.scss";
+@import "form__diet-radio.scss";
+@import "form__contacts.scss";
+@import "form__extra-options.scss";
+
+.form__footer {}
+
+.footer-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+  }
+}
+
+.btn {}
+
+.footer-form__button {
+  width: 100%;
+  margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    width: calc(50% - 30px);
+    margin-right: 60px;
+  }
+}
+
+.form__note-rf {
+  @media (min-width: $tablet-width) {
+    width: calc(50% - 30px);
   }
 }

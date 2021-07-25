@@ -7,10 +7,7 @@
   border: 1px solid #e7e7e7;
   box-sizing: border-box;
 
-  font-family: $fontFamily;
-  @include adaptiv-font(20,16, 1);
-  line-height: 18px;
-  font-weight: 400;
+  @include text-params-2(16, 18, 400, $fontFamily);
   color: $darkgrey-1;
 
   &:hover,
@@ -27,14 +24,16 @@
   }
 
   @media (min-width: $tablet-width) {
+    @include text-params-2(20, 30, 400, $fontFamily);
     padding: 10px 45px 10px 20px;
     line-height: 30px;
-
   }
 }
 
 .textarea {
+  width: 100%;
   padding: 13px 12px 15px 15px;
+  border: 1px solid #E7E7E7;
   resize: none;
 
   @media (min-width: $tablet-width) {
@@ -42,78 +41,49 @@
   }
 }
 
-.input-radio {
-  position: relative;
-  width: 30px;
-  height: 30px;
-  border: 1px solid #CDCDCD;
-  border-radius: 50%;
 
-  &:hover,
-  &:focus {
-    border: 1px solid #BABABA;
-  }
 
-  &:active {
-    opacity: 0.3;
-  }
+// .input-radio {
+//   position: relative;
+//   width: 30px;
+//   height: 30px;
+//   border: 1px solid #CDCDCD;
+//   border-radius: 50%;
 
-  @media (min-width: $tablet-width) {
-    width: 40px;
-    height: 40px;
-  }
-}
+//   &:hover,
+//   &:focus {
+//     border: 1px solid #BABABA;
+//   }
 
-.input-radio::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+//   &:active {
+//     opacity: 0.3;
+//   }
 
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  background-color: $firmcolor;
+//   @media (min-width: $tablet-width) {
+//     width: 40px;
+//     height: 40px;
+//   }
+// }
 
-  @media (min-width: $tablet-width) {
-    width: 18px;
-    height: 18px;
-  }
-}
+// .input-radio::before {
+//   content: "";
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
 
-.input-checkbox {
-  position: relative;
-  width: 30px;
-  height: 30px;
-  border: 1px solid #CDCDCD;
+//   width: 14px;
+//   height: 14px;
+//   border-radius: 50%;
+//   background-color: $firmcolor;
 
-  &:hover,
-  &:focus {
-    border: 1px solid #BABABA;
-  }
+//   @media (min-width: $tablet-width) {
+//     width: 18px;
+//     height: 18px;
+//   }
+// }
 
-  &:active {
-    opacity: 0.3;
-  }
 
-  @media (min-width: $tablet-width) {
-    width: 40px;
-    height: 40px;
-  }
-}
-
-.input-checkbox::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  width: 18px;
-  height: 14px;
-  background-image: url("data:image/svg+xml,%3Csvg width='19' height='15' viewBox='0 0 19 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 11.718L1.3 5.26951L0.25 6.45739L7 14.0938L18.25 1.36648L17.2 0.09375L7 11.718Z' fill='%2368B738'/%3E%3C/svg%3E");
-}
 
 .input--email::before,
 .input--phone::before {
@@ -122,7 +92,7 @@
   top: 50%;
   right: 18px;
   transform: translateY(-50%);
-  
+
   background-repeat: no-repeat;
 
 
@@ -147,38 +117,46 @@
 
 .input::-webkit-input-placeholder,
 .textarea::-webkit-input-placeholder {
-  font-family: $fontFamily;
-  @include adaptiv-font(20,16, 1);
-  line-height: 18px;
-  font-weight: 400;
-  color: $darkgrey-1;
+  @include text-params-2(16, 18, 400, $fontFamily);
+  color: #444444;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    @include text-params-2(20, 30, 400, $fontFamily);
+  }
 }
 
 .input::-moz-placeholder,
 textarea::-moz-placeholder {
-  font-family: $fontFamily;
-  @include adaptiv-font(20,16, 1);
-  line-height: 18px;
-  font-weight: 400;
-  color: $darkgrey-1;
+  @include text-params-2(16, 18, 400, $fontFamily);
+  color: #444444;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    @include text-params-2(20, 30, 400, $fontFamily);
+  }
 }
 
 .input:-moz-placeholder,
 textarea:-moz-placeholder {
-  font-family: $fontFamily;
-  @include adaptiv-font(20,16, 1);
-  line-height: 18px;
-  font-weight: 400;
-  color: $darkgrey-1;
+  @include text-params-2(16, 18, 400, $fontFamily);
+  color: #444444;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    @include text-params-2(20, 30, 400, $fontFamily);
+  }
 }
 
 .input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
-  font-family: $fontFamily;
-  @include adaptiv-font(20,16, 1);
-  line-height: 18px;
-  font-weight: 400;
-  color: $darkgrey-1;
+  @include text-params-2(16, 18, 400, $fontFamily);
+  color: #444444;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    @include text-params-2(20, 30, 400, $fontFamily);
+  }
 }
 
 .input:focus::-webkit-input-placeholder,

@@ -30,16 +30,16 @@ input[type="radio"].visually-hidden {
 .page__body {
   position: relative;
   min-height: 100%;
-  
+
   @include text-params(14, 18, 400);
-  
+
   line-height: $lh-default;
   color: $color-default;
   background-color: $bgс-default;
 
   @media (min-width: $tablet-width) {
     @include text-params(16, 24, 400);
-  } 
+  }
 }
 
 ._lock {
@@ -50,7 +50,7 @@ input[type="radio"].visually-hidden {
 // Оболочка
 
 // .wrapper {
- 
+
 // }
 
 // .page__wrapper {
@@ -58,9 +58,7 @@ input[type="radio"].visually-hidden {
 //   margin: 0 auto;
 // }
 
-.content-wrapper {
-    
-}
+.content-wrapper {}
 
 // Сетка
 .container {
@@ -77,6 +75,28 @@ input[type="radio"].visually-hidden {
   }
 }
 
+.h-line-title {
+  position: absolute;
+  top: -17px;
+  left: 0;
+  padding-left: 19px;
+  padding-right: 22px;
+  z-index: 1;
+
+  @include title-midle(24, 24, 400);
+  background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    top: -25px;
+    left: 30px;
+    padding: 0 37px;
+    @include title-midle(36, 36, 400);
+  }
+
+  @media (min-width: $desktop-width) {
+    left: calc((100vw - 1440px)/2 + 73px);
+  }
+}
+
 @import "inputs.scss";
 @import "buttons.scss";
-

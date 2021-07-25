@@ -11,40 +11,23 @@
     margin-bottom: 86px;
   }
 }
+
 .additional__inner {
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
   }
 }
-.additional__title {
-  position: absolute;
-  top: -18px;
-  left: 0;
-  padding-left: 19px;
-  padding-right: 22px;
-  z-index: 1;
 
-  @include title-midle(24, 24, 400);
-  background-color: #ffffff;
 
-  @media (min-width: $tablet-width) {
-     top: -25px;
-     left: 30px;
-     padding: 0 37px;
-     @include title-midle(36, 36, 400);
-  }
-  @media (min-width: $desktop-width) {
-   left: calc((100vw - 1440px)/2 + 73px);
-  }
-}
+
 .additional__item {
   display: flex;
   flex-wrap: wrap;
   padding: 12px 0 19px;
   border-bottom: 1px solid #CDCDCD;
 
-  &:first-child {    
+  &:first-child {
     border-top: 1px solid #CDCDCD;
   }
 
@@ -53,26 +36,29 @@
     border: 1px solid #CDCDCD;
     border-top: none;
   }
-  
+
   @media (min-width: $desktop-width) {
     flex-wrap: nowrap;
     align-items: center;
     width: 896px;
     padding: 16px 0 17px;
-    
-    border: none; 
+
+    border: none;
     border-bottom: 1px solid #CDCDCD;
   }
 }
+
 .additional__table {
   width: 100%;
-  
+
 }
+
 .additional__table tbody {
   @media (min-width: $tablet-width) {
     display: flex;
-  } 
+  }
 }
+
 .additional-table__heading {
   display: inline-block;
   margin-bottom: 5px;
@@ -81,26 +67,30 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 25px;
-   @include text-params-2(20, 20, 400, $fontFamily); 
+    @include text-params-2(20, 20, 400, $fontFamily);
   }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
   }
 
 }
-.additional-table__value{
+
+.additional-table__value {
   @media (min-width: $tablet-width) {
     display: flex;
     margin-left: auto;
   }
+
   @media (min-width: $desktop-width) {
     align-items: center;
     width: 300px;
     margin-right: 40px;
     padding-top: 3px;
-     
+
   }
 }
+
 .additional-table__quantity {
   display: inline-block;
   margin-bottom: 10px;
@@ -111,10 +101,12 @@
     margin-right: 51px;
     @include text-params(16, 20, 400);
   }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
   }
 }
+
 .additional-table__price {
   text-align: right;
   @include text-params(14, 14, 400);
@@ -122,27 +114,30 @@
   @media (min-width: $tablet-width) {
     @include text-params(16, 20, 400);
   }
+
   @media (min-width: $desktop-width) {
     margin-left: auto;
     margin-bottom: 0;
   }
 }
+
 .additional__button {
   width: 100%;
 
   @media (min-width: $desktop-width) {
-  padding-top: 10px;
-  padding-bottom: 10px;
-   width: 244px; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 244px;
   }
 }
+
 .additional__gift {
   max-width: 280px;
   min-height: 289px;
   margin: 39px auto 35px;
   padding-top: 192px;
   padding-bottom: 43px;
-  
+
 
   background-image: url(../img/icons/icon_gift.svg), url(../img/background/gift-photo-mobile.jpg);
   background-repeat: no-repeat;
@@ -160,9 +155,9 @@
     background-image: url(../img/icons/icon_gift.svg), url(../img/background/gift-photo-tablet.jpg);
     background-size: 78px 79px, cover;
     background-position: 89px 64px, 0 0;
-   
+
   }
-  
+
   @media (min-width: $desktop-width) {
     min-width: 245px;
     margin: 0;
@@ -173,6 +168,7 @@
   }
 
 }
+
 .additional__gift-descr {
   width: 55%;
   margin: 0 auto;
@@ -185,12 +181,12 @@
 
     text-align: left;
   }
-  
+
   @media (min-width: $desktop-width) {
     width: 161px;
     margin: 0 auto;
     padding-top: 185px;
 
     text-align: center;
-  } 
+  }
 }

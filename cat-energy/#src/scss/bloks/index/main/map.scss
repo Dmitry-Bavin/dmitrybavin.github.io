@@ -1,6 +1,7 @@
 .address {
   position: relative;
 }
+
 .address__contacts {
   display: flex;
   justify-content: space-between;
@@ -11,7 +12,7 @@
   @media (min-width: $tablet-width) {
     padding: 66px 71px 51px;
   }
-  
+
   @media (min-width: $desktop-width) {
     position: absolute;
     top: 95px;
@@ -21,38 +22,55 @@
     z-index: 1;
   }
 }
+
+.inner-page .address__contacts {
+  background-color: #f2f2f2;
+
+  @media (min-width: $desktop-width) {
+    background-color: #ffffff;
+  }
+}
+
 .address__invite {
   width: 163px;
-  @include text-params-2(16, 20, 400,);
+  @include text-params-2(16, 20, 400, );
   text-transform: uppercase;
   color: #111111;
 
   @media (min-width: $tablet-width) {
-    @include text-params-2(20, 25, 400,);
+    @include text-params-2(20, 25, 400, );
   }
 }
+
 .address__street {
   width: 155px;
   @include text-params-2(14, 22, 400, "Arial");
   color: #444444;
+  text-align: right;
 
   @media (min-width: $tablet-width) {
     @include text-params-2(16, 22, 400, "Arial");
   }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
 }
+
 .address__city {
   @media (min-width: $tablet-width) {
     display: inline-block;
-  margin-top: 19px;
+    margin-top: 19px;
   }
 }
-.address__map {
-  
-}
+
+.address__map {}
+
 .map {
   width: 100%;
   height: 400px;
 }
+
 .address__map-img {
   position: absolute;
   left: 50%;
